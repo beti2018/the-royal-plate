@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Reserve your table at The Royal Plate and enjoy an elegant dining experience."
+  >
+
+  <meta name="theme-color" content="#10100e">
+
+  <title>Reserve a Table | The Royal Plate</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/booking.css">
+  <script src="js/booking.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="booking-header">
+    <div class="container header-inner">
+
+      <a
+        class="booking-logo"
+        href="index.html"
+        aria-label="The Royal Plate home"
+      >
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false">
+            <path
+              d="M12 23 L19 31 L26 14 L32 29 L40 12 L45 31 L53 23 L49 43 L16 43 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linejoin="round"
+            />
+            <ellipse
+              cx="32"
+              cy="49"
+              rx="19"
+              ry="5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="M20 49 H44"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+
+        <span class="logo-name">
+          THE ROYAL <strong>PLATE</strong>
+        </span>
+      </a>
+
+      <nav class="booking-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#reservation-form">
+        Reserve a Table
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- RESERVATION HERO -->
+  <main>
+    <section class="booking-hero">
+      <div class="booking-hero-overlay"></div>
+
+      <div class="container booking-hero-content">
+        <p class="eyebrow">AN EXCEPTIONAL DINING EXPERIENCE</p>
+
+        <h1>
+          Reserve Your <em>Table</em>
+        </h1>
+
+        <p class="hero-description">
+          Make your next occasion memorable with exquisite cuisine,
+          warm hospitality, and an atmosphere designed for special moments.
+        </p>
+
+        <a class="gold-button" href="#reservation-form">
+          Book Your Experience
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- RESERVATION SECTION -->
+    <section class="reservation-section" id="reservation-form">
+      <div class="container reservation-layout">
+
+        <!-- INFORMATION PANEL -->
+        <aside class="reservation-info">
+          <p class="eyebrow">YOUR EVENING STARTS HERE</p>
+
+          <h2>
+            A Table <em>Awaiting You</em>
+          </h2>
+
+          <p class="info-description">
+            Whether you are planning a romantic dinner, a family gathering,
+            or a celebration with friends, we look forward to welcoming you
+            to The Royal Plate.
+          </p>
+
+          <div class="info-divider"></div>
+
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">✦</span>
+            <div>
+              <h3>Opening Hours</h3>
+              <p>Monday – Sunday</p>
+              <p>12:00 PM – 10:00 PM</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">✦</span>
+            <div>
+              <h3>Dining Experience</h3>
+              <p>Elegant surroundings, thoughtful service,</p>
+              <p>and carefully prepared dishes.</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">✦</span>
+            <div>
+              <h3>Special Occasions</h3>
+              <p>Tell us about birthdays, anniversaries,</p>
+              <p>or other memorable celebrations.</p>
+            </div>
+          </div>
+
+          <div class="reservation-note">
+            <span aria-hidden="true">“</span>
+            <p>
+              Good food brings people together.
+              We would be delighted to be part of your occasion.
+            </p>
+          </div>
+        </aside>
+
+
+        <!-- BOOKING FORM -->
+        <div class="reservation-card">
+          <div class="form-heading">
+            <p class="eyebrow">PLAN YOUR VISIT</p>
+            <h2>Reservation Details</h2>
+            <p>Complete the details below to plan your dining experience.</p>
+          </div>
+
+          <form id="booking-form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full Name <span>*</span></label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+            </div>
+
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span>*</span></label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="guests">Number of Guests <span>*</span></label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select guests</option>
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="5">5 guests</option>
+                  <option value="6">6 guests</option>
+                  <option value="7">7 guests</option>
+                  <option value="8">8 guests</option>
+                  <option value="9+">9 or more guests</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Reservation Date <span>*</span></label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="time">Preferred Time <span>*</span></label>
+                <select id="time" name="time" required>
+                  <option value="">Select a time</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="14:30">2:30 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                  <option value="21:30">9:30 PM</option>
+                  <option value="22:00">10:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion">
+                <option value="regular">Regular Dining</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="date-night">Date Night</option>
+                <option value="family">Family Gathering</option>
+                <option value="business">Business Dinner</option>
+                <option value="other">Other Celebration</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="requests">Special Requests</label>
+              <textarea
+                id="requests"
+                name="requests"
+                rows="4"
+                placeholder="Dietary requirements, seating preferences, or special arrangements..."
+              ></textarea>
+            </div>
+
+
+            <div class="form-checkbox">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                required
+              >
+
+              <label for="consent">
+                I confirm that the information provided is accurate.
+                <span>*</span>
+              </label>
+            </div>
+
+
+            <button class="submit-button" type="submit">
+              Request a Reservation
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <p class="form-disclaimer">
+              This demonstration form does not send personal details or
+              confirm a real reservation. A live booking system must be
+              connected to process requests.
+            </p>
+
+            <div
+              class="form-message"
+              id="form-message"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CLOSING SECTION -->
+    <section class="booking-closing">
+      <div class="container closing-content">
+        <p class="eyebrow">THE ROYAL PLATE</p>
+        <h2>We Look Forward to <em>Welcoming You</em></h2>
+        <a href="index.html#menu" class="text-link">
+          Explore Our Menu <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="booking-footer">
+    <div class="container footer-inner">
+
+      <a
+        class="booking-logo footer-logo"
+        href="index.html"
+        aria-label="The Royal Plate home"
+      >
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false">
+            <path
+              d="M12 23 L19 31 L26 14 L32 29 L40 12 L45 31 L53 23 L49 43 L16 43 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linejoin="round"
+            />
+            <ellipse
+              cx="32"
+              cy="49"
+              rx="19"
+              ry="5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="M20 49 H44"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+
+        <span class="logo-name">
+          THE ROYAL <strong>PLATE</strong>
+        </span>
+      </a>
+
+      <p>
+        © <span id="current-year"></span> The Royal Plate.
+        All rights reserved.
+      </p>
+
+      <a href="index.html" class="footer-home">Return to Home ↑</a>
+
+    </div>
+  </footer>
+
+</body>
+</html>
